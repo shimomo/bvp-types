@@ -1,0 +1,36 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "bvp/types",
+    "description": "Types for Boatrace Venture Project",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "shimomo",
+            "email": "bvp@shimomo.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/shimomo/bvp-types/issues",
+        "source": "https://github.com/shimomo/bvp-types"
+    },
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5.8 || ^13.0",
+        "squizlabs/php_codesniffer": "^4.0",
+        "vimeo/psalm": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BVP\\Types\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BVP\\Types\\Tests\\": "tests/"
+        }
+    },
+    "prefer-stable": true
+}
