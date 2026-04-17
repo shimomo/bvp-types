@@ -24,7 +24,11 @@ jobs:
           - '8.4'
           - '8.5'
         phpunit-version:
+          - '12.5.8'
           - '13.0'
+        exclude:
+          - php-version: '8.3'
+            phpunit-version: '13.0'
     steps:
       - name: Setup PHP ${{ matrix.php-version }}
         uses: shivammathur/setup-php@44454db4f0199b8b9685a5d763dc37cbf79108e1
